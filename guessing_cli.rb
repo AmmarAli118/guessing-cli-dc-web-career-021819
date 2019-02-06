@@ -1,12 +1,12 @@
 def run_guessing_game
-  input = ""
+  user_input = ""
   
-  while input
+  while user_input
     puts "Guess a number between 1 and 6."
-    input = gets.chomp
+    user_input = gets.chomp
     random_number = rand(1..6).to_s
     
-    case input
+    case user_input
     when random_number
       puts "You guessed the correct number!"
     when 'exit'
